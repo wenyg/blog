@@ -16,8 +16,8 @@ sudo docker build -t hexo -f blog/Dockerfile .
 启动博客,启动完之后便可以在浏览器中访问了, 如果想要docker后台运行， `docker run` 后面加个`-d`参数即可
 
 ``` bash
-$ cd blog
-$ sudo docker run -it --rm -p 80:4000 \
+cd blog
+sudo docker run -it --rm -p 80:4000 \
       -v "$(pwd)"/source:/blog/source \
       -v "$(pwd)"/even:/blog/themes/even \
       -v $HOME/.ssh:/root/.ssh \
