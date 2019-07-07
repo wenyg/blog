@@ -2,7 +2,7 @@
 ### BUILD
 构建docker
 ```
-$ git clone git@github.com:wenyg/blog.git
+$ git clone https://github.com/wenyg/blog.git
 $ sudo docker build -t hexo -f blog .
 ```
 ### 使用说明
