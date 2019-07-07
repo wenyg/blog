@@ -3,7 +3,7 @@
 构建docker
 ```
 $ git clone https://github.com/wenyg/blog.git
-$ sudo docker build -t hexo -f blog .
+$ sudo docker build -t hexo -f blog/Dockerfile .
 ```
 ### 使用说明
 1. 启动博客
