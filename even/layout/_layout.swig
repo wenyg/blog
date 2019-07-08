@@ -17,7 +17,9 @@
           <div id="content" class="content">
             {%- block content -%}{%- endblock -%}
           </div>
+          {#
           {%- include '_partial/comments.swig' -%}
+          #}
         </div>
       </main>
 
@@ -29,9 +31,9 @@
         <i class="iconfont icon-up"></i>
       </div>
     </div>
-
+{#
     {%- include '_script/comments.swig' -%}
-
+#}
     {%- include '_script/libs.swig' -%}
     {%- include '_script/theme.swig' -%}
   </body>
