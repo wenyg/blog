@@ -2,7 +2,7 @@
 title: bind中基数树的建立
 date: 2018-03-15 20:23:55
 tags: [radix tree]
-categories: 源码阅读
+categories: code
 ---
 
 BIND9新引入了视图的概念，简单的来讲就是能根据不同的来源IP来返回不同的数据。其中网段的存储，网段的快速匹配都是用基数树来实现的。下面是BIND创建基数树的代码。

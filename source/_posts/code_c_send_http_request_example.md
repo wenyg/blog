@@ -2,7 +2,7 @@
 title: C语言发送http请求
 date: 2017-10-22 20:33:21
 tags: [c, http]
-categories: demo
+categories: code
 ---
 
 C语言发送http请求和普通的socket通讯,原理是一样的.无非就三步connect()连上服务器,send()发送数据,recv()接收数据.只不过发送的数据有特定的格式.下面的是简单发送一个http请求的例子

@@ -1,6 +1,6 @@
 ---
 title: 基于docker的hexo博客环境
-tags: [docker，hexo]
+tags: [docker, hexo]
 categories: 工具
 date: 2019-07-08 19:45:55
 ---
