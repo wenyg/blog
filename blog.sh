@@ -20,7 +20,7 @@ case "$1" in
 	else
 		git commit -m "$2"
 	fi
-	git push
+	git push origin master
 	;;
 
 	s)
