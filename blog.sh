@@ -2,6 +2,14 @@
 
 case "$1" in
 	p)
+	docker run -it --rm \
+		-v "$(pwd)"/source:/blog/source \
+		-v "$(pwd)"/even:/blog/themes/even \
+		-v $HOME/.ssh:/root/.ssh \
+		--mount type=bind,source="$(pwd)"/_config.yml,target=/blog/_config.yml \
+		--mount type=bind,source="$(pwd)"/gitconfig,target=/root/.gitconfig \
+		hexo hexo d
+		
 	git add source/ even/ _config.yml
 	git add Dockerfile blog.sh gitconfig README.md
 	if [ -z $2 ]
@@ -11,14 +19,6 @@ case "$1" in
 		git commit -m "$2"
 	fi
 	git push
-
-	docker run -it --rm \
-		-v "$(pwd)"/source:/blog/source \
-		-v "$(pwd)"/even:/blog/themes/even \
-		-v $HOME/.ssh:/root/.ssh \
-		--mount type=bind,source="$(pwd)"/_config.yml,target=/blog/_config.yml \
-		--mount type=bind,source="$(pwd)"/gitconfig,target=/root/.gitconfig \
-		hexo hexo d
 	;;
 
 	s)
