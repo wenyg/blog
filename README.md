@@ -36,6 +36,7 @@ sudo ./blog.sh d
 - `Dockerfile` : 构建docker镜像的脚本
 - `blog.sh` : 博客部署脚本，可以自行查看
 - `gitconfig` : git配置文件，docker中部署博客到pages用到
+- `CNAME` : 为pages可以通过别名访问，前提是要让你的CNAME指向github.io
 
 ## 相关连接
 
