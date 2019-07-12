@@ -21,7 +21,11 @@ INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.
 ```
 部署博客
 ```
-./blog.sh p "update blog"
+sudo ./blog.sh d
+```
+更新源文章到git仓库
+```
+./blog.sh p
 ```
 
 ## 目录介绍
@@ -35,4 +39,4 @@ INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.
 
 ## 相关连接
 
-[Winn's blog](https://wenyg.github.io), 该仓库生成的博客网站
+[Winn's blog](https://wenyg.github.io), 该仓库生成的博客网站，
