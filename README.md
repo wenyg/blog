@@ -19,7 +19,7 @@ sudo docker build -t hexo .
 1. 本地预览博客
 
     ```bash
-    sudo ./blog.sh s
+    ./blog.sh s
     INFO  Start processing
     INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.
     ```
@@ -27,7 +27,7 @@ sudo docker build -t hexo .
 2. 部署博客到github pages。(自行创建username.github.io仓库，配置ssh key，修改_config.yml中仓库配置)
 
     ```bash
-    sudo ./blog.sh d
+    ./blog.sh d
     ```
 
 3. 更新源文章到git仓库
@@ -45,7 +45,7 @@ sudo docker build -t hexo .
 
 - `source`: 博客目录，所写的博客基本上都放在此目录下的`_post`目录下，以后要是添加新文章只需要把markdown文件放到此目录即可
 
-需要修改的两个配置文件
+一般有两个配置文件需要修改
 
 - `_config.yml` ： hexo的配置文件，包括站点设置，部署设置等等，具体查看 [hexo配置](https://hexo.io/zh-cn/docs/configuration)
 - `gitconfig` :  pages仓库中显示的name，email。
