@@ -49,13 +49,13 @@ sudo docker build -t hexo .
 
 - `_config.yml` ： hexo的配置文件，包括站点设置，部署设置等等，具体查看 [hexo配置](https://hexo.io/zh-cn/docs/configuration)
 - `gitconfig` :  pages仓库中显示的name，email。
+- `CNAME` : 为pages可以通过别名访问，前提是要让你的CNAME指向github.io, 如果没有自己的域名，则把CNAME清空，或者在 `blog.sh` 中吧CNAME相关的启动参数去掉，否者会导致pages页面无法访问。
 
 其它的文件可改可不改
 
 - `themes`: 主题目录，里面的是 [even](https://github.com/ahonn/hexo-theme-even) 主题，是个人比较喜欢的主题，所以也封装到镜像中了
 - `Dockerfile` : 构建docker镜像的脚本
 - `blog.sh` : 博客部署脚本
-- `CNAME` : 为pages可以通过别名访问，前提是要让你的CNAME指向github.io
 
 ## 相关连接
 
