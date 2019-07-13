@@ -13,18 +13,24 @@ sudo docker build -t hexo .
 ```
 
 ## 使用说明
+
 启动博客
-```
+
+```bash
 $ sudo ./blog.sh s
 INFO  Start processing
 INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.
 ```
+
 部署博客
-```
+
+```bash
 sudo ./blog.sh d
 ```
+
 更新源文章到git仓库
-```
+
+```bash
 ./blog.sh p
 ```
 
@@ -40,4 +46,4 @@ sudo ./blog.sh d
 
 ## 相关连接
 
-[Winn's blog](https://wenyg.github.io), 该仓库生成的博客网站，
+[Winn's blog](https://wenyg.github.io), 该仓库生成的博客网站。
