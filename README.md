@@ -1,10 +1,10 @@
-# blog
+# BLOG
 
-这是一个基于docker的hexo博客环境，博客主题是even。利用docker可以快速的搭建一个个人博客。
+这是一个基于 [docker](https://www.docker.com/) 的 [hexo](https://hexo.io/zh-cn/) 博客环境，博客主题是 [even](https://github.com/ahonn/hexo-theme-even)。你只需要安装一个docker，就可以快速的搭建一个博客，并且随时随地在任何地方更新博客。
 
-## BUILD
+## 构建hexo镜像
 
-构建docker， 具体操作可以在`Dockerfile`中查看，build镜像的时候会现在本地寻找基础镜像，找不到就会去Dokcer Hub中下载，第一次需要花费一些时间，之后就不需要了
+构建hexo镜像，镜像里已经封装了搭建博客所需要的一切东西。构建镜像需要一些时间。
 
 ``` bash
 git clone https://github.com/wenyg/blog.git
@@ -14,36 +14,55 @@ sudo docker build -t hexo .
 
 ## 使用说明
 
-启动博客
+`blog.sh`是一个shell脚本，把docker的用法封装了进去，这样你不会docker也可以轻松的操作博客。
 
-```bash
-$ sudo ./blog.sh s
-INFO  Start processing
-INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.
-```
+1. 本地预览博客
 
-部署博客
+    ```bash
+    sudo ./blog.sh s
+    INFO  Start processing
+    INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.
+    ```
 
-```bash
-sudo ./blog.sh d
-```
+2. 部署博客到github pages。(自行创建username.github.io仓库，配置ssh key，修改_config.yml中仓库配置)
 
-更新源文章到git仓库
+    ```bash
+    sudo ./blog.sh d
+    ```
 
-```bash
-./blog.sh p
-```
+3. 更新源文章到git仓库
+
+    ```bash
+    ./blog.sh p
+    ```
+    
 
 ## 目录介绍
 
-- `even`: even主题，是个人比较喜欢的主题，所以也封装到镜像中了
+仓库下的所有文件都可以自己进行修改定制。
+
+写博客
+
 - `source`: 博客目录，所写的博客基本上都放在此目录下的`_post`目录下，以后要是添加新文章只需要把markdown文件放到此目录即可
-- `_config.yml` : hexo的配置文件,配置个人github pages地址，博客设置等
+
+需要修改的两个配置文件
+
+- `_config.yml` ： hexo的配置文件，包括站点设置，部署设置等等，具体查看 [hexo配置](https://hexo.io/zh-cn/docs/configuration)
+- `gitconfig` :  pages仓库中显示的name，email。
+
+其它的文件可改可不改
+
+- `themes`: 主题目录，里面的是 [even](https://github.com/ahonn/hexo-theme-even) 主题，是个人比较喜欢的主题，所以也封装到镜像中了
 - `Dockerfile` : 构建docker镜像的脚本
-- `blog.sh` : 博客部署脚本，可以自行查看
-- `gitconfig` : git配置文件，docker中部署博客到pages用到
+- `blog.sh` : 博客部署脚本
 - `CNAME` : 为pages可以通过别名访问，前提是要让你的CNAME指向github.io
 
 ## 相关连接
 
-[Winn's blog](https://wenyg.github.io), 该仓库生成的博客网站。
+[Winn's blog](https://wenyg.github.io), 该仓库生成的博客网站
+
+[菜鸟教程](https://www.runoob.com/docker/ubuntu-docker-install.html) docker安装教程
+
+[Docker文档](https://docs.docker.com/) docker官方教程
+
+[even配置文档](https://hexo.io/zh-cn/docs/configuration), 只需关注设置部分即可

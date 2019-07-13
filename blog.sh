@@ -6,7 +6,7 @@ case "$1" in
 	docker run -it --rm \
 		--env CNAME=${cname} \
 		-v "$(pwd)"/source:/blog/source \
-		-v "$(pwd)"/even:/blog/themes/even \
+		-v "$(pwd)"/themes/even:/blog/themes/even \
 		-v $HOME/.ssh:/root/.ssh \
 		--mount type=bind,source="$(pwd)"/_config.yml,target=/blog/_config.yml \
 		--mount type=bind,source="$(pwd)"/gitconfig,target=/root/.gitconfig \
@@ -15,7 +15,7 @@ case "$1" in
 	;;
 
 	p)
-	git add source/ even/ _config.yml
+	git add source/ themes/ _config.yml
 	git add Dockerfile blog.sh gitconfig README.md CNAME
 	if [ -z $2 ]
 	then
@@ -28,12 +28,12 @@ case "$1" in
 
 	s)
 	 docker run -it --rm -p 4000:4000 \
-      -v "$(pwd)"/source:/blog/source \
-      -v "$(pwd)"/even:/blog/themes/even \
-      -v $HOME/.ssh:/root/.ssh \
-      --mount type=bind,source="$(pwd)"/_config.yml,target=/blog/_config.yml \
-      --mount type=bind,source="$(pwd)"/gitconfig,target=/root/.gitconfig \
-      hexo hexo s
+        -v "$(pwd)"/source:/blog/source \
+		-v "$(pwd)"/themes/even:/blog/themes/even \
+        -v $HOME/.ssh:/root/.ssh \
+        --mount type=bind,source="$(pwd)"/_config.yml,target=/blog/_config.yml \
+        --mount type=bind,source="$(pwd)"/gitconfig,target=/root/.gitconfig \
+        hexo hexo s
 	;;
 esac
 
