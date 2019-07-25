@@ -9,7 +9,7 @@ date: 2019-07-08 17:38:55
 
 1. 更换国内软件源，推荐 [清华大学开源软件镜像源](https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/) 。Ubuntu的软件配置文件是`/etc/apt/sources.list`, 将系统自带的文件做个备份，将该文件替换为下面内容，即可使用清华的软件源镜像。
 
-   ```
+   ``` text
    # 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
    deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse
    # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse
@@ -73,5 +73,4 @@ date: 2019-07-08 17:38:55
    sudo groupadd docker
    sudo usermod -aG docker $USER
    ```
-
    
