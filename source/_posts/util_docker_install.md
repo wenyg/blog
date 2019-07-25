@@ -73,4 +73,3 @@ date: 2019-07-08 17:38:55
    sudo groupadd docker
    sudo usermod -aG docker $USER
    ```
-   

@@ -7,13 +7,13 @@ date: 2019-07-11 19:28:33
 
 1. 打开core开关
 
-   ```
+   ```bash
    ulimit -c unlimited
    ```
 
 2. 设置core文件生成位置格式
 
-   ```
+   ```bash
    echo "/corefile/core-%e-%p" > /proc/sys/kernel/core_pattern
    ```
 
@@ -21,9 +21,8 @@ date: 2019-07-11 19:28:33
 
    之后便可以用gdb来调试，前提是编译程序的时候加上了`-g`选项
 
-   ```
+   ```bash
    gdb ./a.out code-a.out-28281
    ```
 
    进入gdb之后输入bt 就能打印出crash时候的函数调用栈了
-
