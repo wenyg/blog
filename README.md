@@ -12,6 +12,13 @@ cd blog
 sudo docker build -t hexo .
 ```
 
+如果build花费太多时间， 你也可以用下面这种方法
+
+``` bash
+docker pull wenyg/blog
+docker tag wenyg/blog hexo
+```
+
 ## 使用说明
 
 `blog.sh`是一个shell脚本，把docker的用法封装了进去，这样你不会docker也可以轻松的操作博客。
