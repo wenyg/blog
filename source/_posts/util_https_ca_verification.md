@@ -1,8 +1,8 @@
 ---
 title: openssl证书链验证
 date: 2019-04-23 21:10:43
-tags: [openssl, https, ssl]
-categories: HTTP
+tags: [openssl, https]
+categories: 理解计算机
 ---
 
 ### 证书链

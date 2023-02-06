@@ -2,7 +2,7 @@
 title: 从TCP到HTTPS代码实现-https服务器
 date: 2019-04-27 21:10:43
 tags: [openssl, https]
-categories: code
+categories: 废话少说,放码过来
 ---
 
 https 就是在http和tcp之间加一道加密的过程, 在代码上的实现和一般的TCP Server区别就两点

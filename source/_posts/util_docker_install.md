@@ -1,7 +1,7 @@
 ---
 title: Ubuntu18.04 安装 Docker
 tags: [docker]
-categories: 工具
+categories: 开发者手册
 date: 2019-07-08 17:38:55
 ---
 

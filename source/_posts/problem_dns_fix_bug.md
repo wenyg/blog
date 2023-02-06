@@ -1,7 +1,7 @@
 ---
 title: 一次DNS服务器BUG调试
 date: 2018-03-27 20:34:30
-tags: [DNS, BUG, 调试]
+tags: [DNS]
 categories: BUG调试
 ---
 ## 背景

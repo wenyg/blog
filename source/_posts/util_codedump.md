@@ -1,7 +1,7 @@
 ---
 title: linux codedump设置
 tags: [codedump]
-categories: 工具
+categories: 开发者手册
 date: 2019-07-11 19:28:33
 ---
 

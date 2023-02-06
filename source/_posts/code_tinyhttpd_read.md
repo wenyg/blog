@@ -1,7 +1,7 @@
 ---
 title: tinyhttpd源码解析，最简单的HTTP服务器
 date: 2017-12-03 23:11:12
-tags: [tinyhttpd, http, 服务器]
+tags: [http]
 categories: 源码分析
 ---
 ### 简介

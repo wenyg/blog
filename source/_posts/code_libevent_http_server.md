@@ -2,7 +2,7 @@
 title: libevent之http服务器
 date: 2019-04-30 19:10:42
 tags: [libevent, http]
-categories: code
+categories: 废话少说,放码过来
 ---
 
 libevent简单服务器

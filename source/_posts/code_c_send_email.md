@@ -1,8 +1,8 @@
 ---
 title: C语言发送邮件(带帐号密码认证)，简单的libesmtp实例
 date: 2017-10-16 18:33:08
-categories: code
-tags: [libesmtp, 邮件]
+tags: [libesmtp]
+categories: 废话少说,放码过来
 ---
 
 ### 编译

@@ -2,7 +2,7 @@
 title: hexo实现个人博客
 date: 2017-07-05 20:21:48
 tags: [hexo]
-categories: 工具
+categories: 开发者手册
 ---
 
 ### 安装依赖

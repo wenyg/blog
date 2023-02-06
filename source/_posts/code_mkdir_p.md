@@ -3,7 +3,7 @@ title: C++ 递归创建文件夹
 description: 如何用C循化创建文件夹，类似于mkdir -p
 date: 2019-07-09 15:11:12
 tags: [mkdir]
-categories: code
+categories: 废话少说,放码过来
 ---
 
 ### code

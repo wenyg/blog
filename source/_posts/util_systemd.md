@@ -1,7 +1,7 @@
 ---
 title: systemctl 服务编写
-tags: [systemctl, service]
-categories: 工具
+tags: [systemctl]
+categories: 开发者手册
 date: 2019-07-12 15:50:22
 ---
 

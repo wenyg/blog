@@ -1,8 +1,8 @@
 ---
 title: libevent之ssl通信
 date: 2019-04-29 19:10:42
-tags: [libevent, ssl]
-categories: code
+tags: [libevent, openssl]
+categories: 废话少说,放码过来
 ---
 
 ### 说明

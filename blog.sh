@@ -27,7 +27,7 @@ case "$1" in
 	;;
 
 	s)
-	 docker run -it --rm -p 4000:4000 \
+	 docker run -it --rm -p 80:4000 \
         -v "$(pwd)"/source:/blog/source \
 		-v "$(pwd)"/themes/even:/blog/themes/even \
         -v $HOME/.ssh:/root/.ssh \

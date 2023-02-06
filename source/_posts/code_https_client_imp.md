@@ -2,7 +2,7 @@
 title: 从TCP到HTTPS代码实现-https客户端
 date: 2019-04-26 22:55:23
 tags: [openssl, https]
-categories: code
+categories: 废话少说,放码过来
 ---
 
 C语言实现https请求, 先贴上代码, 以下代码来自<<HTTP权威指南>>, 稍作修改
