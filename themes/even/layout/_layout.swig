@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="{{ config.language }}">
   <head>
+  <script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?46dc9ceed870eaf1f7b89f98259df601";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+  </script>
     {%- include '_partial/head.swig' %}
     <title>{%- block title -%}{%- endblock -%}</title>
   </head>
