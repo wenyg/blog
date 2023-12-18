@@ -1,39 +1,29 @@
 #!/bin/bash
 
+## 获取脚本自身所在目录
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
+CONTAINER_BLOG_DIR="/blog"
 case "$1" in
-	d)
-	cname=$(cat CNAME)
-	docker run -it --rm \
-		--env CNAME=${cname} \
-		-v "$(pwd)"/source:/blog/source \
-		-v "$(pwd)"/themes/even:/blog/themes/even \
-		-v $HOME/.ssh:/root/.ssh \
-		--mount type=bind,source="$(pwd)"/_config.yml,target=/blog/_config.yml \
-		--mount type=bind,source="$(pwd)"/gitconfig,target=/root/.gitconfig \
-		--mount type=bind,source="$(pwd)"/CNAME,target=/root/CNAME \
-		hexo sh -c 'hexo g && echo "$CNAME" > /blog/public/CNAME && hexo d'
-	;;
-
-	p)
-	git add source/ themes/ _config.yml
-	git add Dockerfile blog.sh gitconfig README.md CNAME
-	if [ -z $2 ]
-	then
-		git commit -m "Update"
-	else
-		git commit -m "$2"
-	fi
-	git push origin master
-	;;
-
-	s)
-	 docker run -it --rm -p 80:4000 \
-        -v "$(pwd)"/source:/blog/source \
-		-v "$(pwd)"/themes/even:/blog/themes/even \
-        -v $HOME/.ssh:/root/.ssh \
-        --mount type=bind,source="$(pwd)"/_config.yml,target=/blog/_config.yml \
-        --mount type=bind,source="$(pwd)"/gitconfig,target=/root/.gitconfig \
-        hexo hexo s
+	# 生成 html 资源文件到 nginx-deploy/html 目录
+	gen)
+		docker run -it --rm \
+			-v ${SCRIPT_DIR}/source:${CONTAINER_BLOG_DIR}/source \
+			-v ${SCRIPT_DIR}/themes/even:${CONTAINER_BLOG_DIR}/themes/even \
+			-v ${SCRIPT_DIR}/_config.yml:${CONTAINER_BLOG_DIR}/_config.yml \
+			-v ${SCRIPT_DIR}/nginx-deploy/html/:${CONTAINER_BLOG_DIR}/public/ \
+			hexo /bin/bash -lic "hexo g"
+			#hexo /bin/bash -lic "hexo g && cp -fr public/* /html/"
+		;;
+	# 启动 nginx
+	run)
+		NGINX_DEPLOY_DIR=${SCRIPT_DIR}/nginx-deploy
+		docker run --rm -d \
+			-p 80:80 -p 443:443 \
+			-v ${NGINX_DEPLOY_DIR}/nginx.conf:/etc/nginx/nginx.conf \
+			-v ${NGINX_DEPLOY_DIR}/html:/etc/ngxin/html \
+			-v ${NGINX_DEPLOY_DIR}/ssl:/etc/nginx/ssl \
+			nginx
 	;;
 esac
 
