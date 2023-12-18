@@ -39,18 +39,6 @@
 {#- Theme styling -#}
 <link rel="stylesheet" type="text/css" href="{{ url_for('css/style.css') }}?v={{ theme.version }}" />
 
-{#- Analytics and push -#}
-
-{#
-{%- if not env.debug -%}
-  {%- include "../_script/analytics.swig" -%}
-  {%- include "../_script/push.swig" -%}
-{%- endif -%}
-#}
-
-{#- LeanCloud Counter -#}
-{%- include "../_script/counter.swig"%}
-
 {%- set themeConfig = { leancloud: theme.leancloud, toc: theme.toc, fancybox: theme.fancybox, pjax: theme.pjax, latex: theme.latex } -%}
 <script>
   window.config = {{ JSON.stringify(themeConfig) }};

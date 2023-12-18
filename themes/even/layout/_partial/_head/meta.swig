@@ -29,11 +29,3 @@
   <meta name="keywords" content="{%- for tag in page.tags -%}{{ tag.name }}, {%- endfor -%}{{ config.title }}" />
 {%- endif -%}
 
-{%- if theme.baidu_verification -%}
-  <meta name="baidu-site-verification" content="{{ theme.baidu_verification }}" />
-{%- endif -%}
-
-{%- if theme.google_verification -%}
-  <meta name="google-site-verification" content="{{ theme.google_verification }}" />
-{%- endif -%}
-
