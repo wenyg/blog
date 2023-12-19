@@ -1,6 +1,6 @@
 ---
 title: VSCode 容器中开发相关配置
-date: 2023-8-22 13:43:57
+date: 2023-08-22 13:43:57
 tags: [docker, vscode]
 categories: 工具
 ---
