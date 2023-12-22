@@ -1,6 +1,6 @@
 ---
 title: ubuntu 更新为清华源
-date: 2022-12-23 17:12:32
+date: 2022-06-23 17:12:32
 tags: [proxy]
 categories: 工具
 ---
