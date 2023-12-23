@@ -1,7 +1,7 @@
 ---
 title: ubuntu下构建deb包
 date: 2019-07-23 20:17:33
-categories: 开发者手册
+categories: 工具
 ---
 
 本文讲解如何构建一个deb包

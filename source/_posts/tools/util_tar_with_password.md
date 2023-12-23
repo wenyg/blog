@@ -1,7 +1,7 @@
 ---
 title: tar 带密码压缩
 tags: [shell]
-categories: 开发者手册
+categories: 工具
 date: 2023-03-30 10:05:45
 ---
 

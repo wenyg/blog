@@ -1,7 +1,7 @@
 ---
 title: shell 使用技巧
 tags: [shell]
-categories: 开发者手册
+categories: 工具
 date: 2023-03-24 11:16:26
 ---
 

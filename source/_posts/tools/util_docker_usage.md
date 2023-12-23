@@ -1,7 +1,7 @@
 ---
 title: docker常见操作
 tags: [docker]
-categories: 开发者手册
+categories: 工具
 date: 2019-07-25 23:33:55
 ---
 

@@ -2,7 +2,7 @@
 title: Ubuntu 安装sublime
 date: 2019-07-11 21:36:43
 tags: [sublime]
-categories: 开发者手册
+categories: 工具
 ---
 
 1. 信任sublime的密钥

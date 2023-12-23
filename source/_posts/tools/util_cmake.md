@@ -2,7 +2,7 @@
 title: CMAKE实践
 date: 2019-05-04 20:34:30
 tags: [cmake, makefile]
-categories: 开发者手册
+categories: 工具
 ---
 
 由于之前编译代码一直用Makefile, 但是新公司都用CMake来编译,就花了一天的时间把Makefile换成CMakeLists.txt. 把学习的过程记录下来

@@ -1,7 +1,7 @@
 ---
 title: tar打包
 tags: [tar]
-categories: 开发者手册
+categories: 工具
 date: 2019-07-15 19:28:33
 ---
 
