@@ -29,8 +29,6 @@ sed -i 's/http:\/\/\(archive\|security\).ubuntu.com\/ubuntu\//http:\/\/mirrors.t
 
 ## npm 
 
-方法一:
-
 ```bash
 npm config set registry https://registry.npmmirror.com
 ```
