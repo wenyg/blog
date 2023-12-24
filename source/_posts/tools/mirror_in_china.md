@@ -19,23 +19,17 @@ categories: 工具
 }
 ```
 
-##  ubuuntu apt 源
+##  ubuuntu apt
 
 /etc/apt/sources.list 替换为 清华源
 
-```shell
+```bash
 sed -i 's/http:\/\/\(archive\|security\).ubuntu.com\/ubuntu\//http:\/\/mirrors.tuna.tsinghua.edu.cn\/ubuntu\//g' /etc/apt/sources.list
 ```
 
 ## npm 
 
 方法一:
-
-```bash
-alias cnpm="npm --registry=https://registry.npmmirror.com \ --cache=$HOME/.npm/.cache/cnpm \ --disturl=https://npmmirror.com/mirrors/node \ --userconfig=$HOME/.cnpmrc"
-```
-
-方法二:
 
 ```bash
 npm config set registry https://registry.npmmirror.com

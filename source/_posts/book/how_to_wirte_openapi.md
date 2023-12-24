@@ -42,4 +42,4 @@ Content-Type: text/plain
 hello
 ```
 
-接下来我们介绍如何在 OpenAPI 中描述一个接口, 详细文档请移步: https://www.winn.cc/openapi-intro/#/README
+接下来我们介绍如何在 OpenAPI 中描述一个接口, 详细文档请移步: [编写 OpenAPI](http://www.winn.cc/openapi-intro/#/README)
