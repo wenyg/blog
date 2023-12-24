@@ -18,8 +18,7 @@ case "$1" in
 	# 启动 nginx
 	run)
 		NGINX_DEPLOY_DIR=${SCRIPT_DIR}/nginx-deploy
-		docker run --rm -d \
-			-p 80:80 -p 443:443 \
+		docker run --rm -d --net=host \
 			-v ${NGINX_DEPLOY_DIR}/nginx.conf:/etc/nginx/nginx.conf \
 			-v ${NGINX_DEPLOY_DIR}/html:/etc/ngxin/html \
 			-v ${NGINX_DEPLOY_DIR}/ssl:/etc/nginx/ssl \
