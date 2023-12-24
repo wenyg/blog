@@ -24,7 +24,7 @@ categories: 工具
 /etc/apt/sources.list 替换为 清华源
 
 ```bash
-sed -i 's/http:\/\/\(archive\|security\).ubuntu.com\/ubuntu\//http:\/\/mirrors.tuna.tsinghua.edu.cn\/ubuntu\//g' /etc/apt/sources.list
+sed -i 's#http://\(archive\|security\).ubuntu.com/ubuntu/#http://mirrors.tuna.tsinghua.edu.cn/ubuntu/#g' /etc/apt/sources.list
 ```
 
 ## npm 
