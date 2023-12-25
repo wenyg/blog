@@ -1,107 +1,62 @@
-# ===========================================
-# Site Information Settings
-# ===========================================
+title: Résumé
 
-# Site creation time
-since: 2017
+footer:
+  enable: true # decide where you want to show  your footer
+  copyright:  # customize your copyright in footer, e.g. © 2019-2020 Zhiwei Li
+    startYear: 2019
+    currentYear: 2020
+    author: Zhiwei Li
+    link: https://github.com/mtics/hexo-mtics-resume
+    beian: 
 
-# Custom your favicon.ico in `site/source`
-favicon: /favicon.ico
 
-# Set feed link (false | default | your feed link)
-# false: disable
-# default: use `atom.xml`, generator for `hexo-generator-feed`
-rss: false
-
-# ===========================================
-# Menu Settings
-# ===========================================
-menu:
-  Home: /
-  Archives: /archives/
-  Tags: /tags/
-  Categories: /categories/
-  About: /about/
-
-# ===========================================
-# Theme Settings
-# ===========================================
-# color: default | mint green | cobalt blue | hot pink | dark violet
-color: default
-
-# default page mode: default | archives
-mode: default
-
-toc: true
-
-# jQuery fancybox
-fancybox: true
-
-pjax: true
-
-# LaTeX support (via MathJax)
-latex: false
-
-copyright:
-  enable: false
-  # https://creativecommons.org/
-  license: '<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>'
-
-reward:
-  enable: false
-  qrCode:
-    wechat:
-    alipay:
-
-# ===========================================
-# Social links Settings
-# ===========================================
-social:
-  email: yg_wen@126.com
-  stack-overflow:
-  twitter:
-  facebook:
-  linkedin:
-  google:
-  github: https://github.com/wenyg
-  weibo:
-  zhihu:
-  douban:
-  pocket:
-  tumblr:
-  instagram:
-
-# ===========================================
-# Third Party Services Settings
-# ===========================================
-
-# LeanCloud
-leancloud:
-  app_id:
-  app_key:
-
-# Baidu Analytics
-baidu_analytics: 46dc9ceed870eaf1f7b89f98259df601
-# Baidu Verification
-baidu_verification:
-
-# Google Analytics
-google_analytics:
-# Google Verification
-google_verification:
-
-# Disqus
-disqus_shortname:
-
-#Changyan
-changyan:
-  appid:
-  appkey:
-
-#LiveRe
-livere_datauid:
-
-# ===========================================
-# Version
-# ===========================================
-version: 2.11.0
+################################
+#     Write your resume Here   #
+################################
+resume:
+  name: NAME
+  jobtitle: C/C++ Senor Enginer
+  portrait: img/wenyg.jpg # author's portrait
+  contact:
+    - icon: fa-envelope
+      text: yg_wen@126.com
+    - icon: fa-phone-square
+      text: 17521662505
+    - icon: fa-globe
+      text: winn's blog
+      link: "https://www.winn.cc"
+    - icon: fa-github
+      text: github/wenyg
+      link: "https://github.com/wenyg"
+  education:
+    - university: ZUT
+      duration: 2013/9 ~ 2017/5
+      location:  Software
+      # major: 软件工程
+  experience:
+    - title: Job Title 1
+      duration: Apr 2016 - Now
+      company: Your 1st, Inc.
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    - title: Job Title 2
+      duration: Apr 2013 - Mar 2016
+      company: Your 2nd, Inc.
+      description: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    - title: Job Title 3
+      duration: Dec 2011 - Mar 2012
+      company: Your 3rd Co, Ltd.
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  projects:
+    - name: Project Name 1
+      description: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      contribution: Contributor.
+    - name: Project Name 2
+      description: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      contribution: Creator and maintainer.
+  skills:
+    - title: Skill Group 1
+      items: Lorem, Ipsum, Dolor, Sit, Amet
+    - title: Skill Group 2
+      items: Consectetur, Adipiscing, Elit
+    - title: Skill Group 3
+      items: Sed do, Eiusmod, Tempor, Incididunt

@@ -15,6 +15,16 @@ case "$1" in
 			hexo /bin/bash -lic "hexo g"
 			#hexo /bin/bash -lic "hexo g && cp -fr public/* /html/"
 		;;
+	serve)
+		docker run -it --rm \
+			--net=host \
+			-v ${SCRIPT_DIR}/source:${CONTAINER_BLOG_DIR}/source \
+			-v ${SCRIPT_DIR}/themes/even:${CONTAINER_BLOG_DIR}/themes/even \
+			-v ${SCRIPT_DIR}/_config.yml:${CONTAINER_BLOG_DIR}/_config.yml \
+			-v ${SCRIPT_DIR}/nginx-deploy/html/:${CONTAINER_BLOG_DIR}/public/ \
+			hexo /bin/bash -lic "hexo serve"
+			#hexo /bin/bash -lic "hexo g && cp -fr public/* /html/"
+		;;
 	# 启动 nginx
 	run)
 		NGINX_DEPLOY_DIR=${SCRIPT_DIR}/nginx-deploy
