@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="/css/NotoSans.css" rel="stylesheet">
   <link href="/css/font-awesome.css" rel="stylesheet">
-    <link rel="stylesheet" href="resume.css">
+  <link href="/css/resume.css" rel="stylesheet">
 </head>
   <body>
     <div class="container">
