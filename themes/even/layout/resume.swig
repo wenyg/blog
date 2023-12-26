@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title>{{ theme.title }}</title>
+    <title> 温阳光 - C/C++开发工程师 </title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="/css/NotoSans.css" rel="stylesheet">
@@ -42,7 +42,7 @@
 
       <section id="education">
         <div class="section-title">
-          {{ __('resume.education') }} 
+          {{ __('教育背景') }} 
         </div>
         <div class="section-content">
           {% for edu in theme.resume.education %}
@@ -66,10 +66,24 @@
           {% endfor %}
         </div>
       </section>
+      <section id="skills">
+        <div class="section-title">
+        {{ __('专业技能') }} 
+        </div>
+        <div class="section-content">
+          {% for skill in theme.resume.skills %}
+          <div >
+            <div >
+              {{ skill.title }}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </section>
 
       <section id="experience">
         <div class="section-title">
-          {{ __('resume.experience') }} 
+          {{ __('工作经历') }} 
         </div>
         <div class="section-content">
           {% for exp in theme.resume.experience %}
@@ -90,7 +104,7 @@
 
       <section id="projects">
         <div class="section-title">
-          {{ __('resume.projects') }} 
+          {{ __('项目经验') }} 
         </div>
         <div class="section-content">
           {% for project in theme.resume.projects %}
@@ -108,24 +122,6 @@
           {% endfor %}
         </div>
       </section>
-
-      <section id="skills">
-          <div class="section-title">
-          {{ __('resume.skills') }} 
-          </div>
-          <div class="section-content">
-            {% for skill in theme.resume.skills %}
-            <div class="block">
-              <div class="block-title">
-                {{ skill.title }}
-              </div>
-              <div class="block-subtitle">
-                {{ skill.items }}
-              </div>
-            </div>
-            {% endfor %}
-          </div>
-        </section>
 
     </div>
   </body>

@@ -1,100 +1,187 @@
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1rem;
-  max-width: 48rem;
-  text-align: left;
+/* mobile.css 的内容 */
+@media screen and (max-device-width: 48rem) {
+  html {
+    font-size: 12px;
+  }
+
+  .container {
+    padding-left: .4rem;
+    padding-right: .4rem;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
+
+  .name-wrapper {
+    text-align: left;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    margin-top: .8rem;
+  }
+
+  .sub-title {
+    font-size: 1rem;
+    margin-top: .2rem;
+  }
+
+  .contact {
+    grid-row-start: 2;
+  }
+
+  .contact-item {
+    padding-top: .2rem;
+    padding-left: .4rem;
+  }
+
+  section {
+    display: block;
+    padding-top: .8rem;
+  }
+
+  .section-title {
+    margin-bottom: .4rem;
+  }
+
+  #skills .section-content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .block {
+    margin-top: .2rem;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+  }
+
+  .block-title {
+    font-size: 1rem;
+  }
+
+  .block-subtitle {
+    font-size: .8rem;
+    text-align: left;
+  }
+
+  .portrait {
+    text-align: center;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+  }
+
+  .author-img {
+    margin-top: 1.5rem;
+    max-width: 7rem;
+    max-height: 9.8rem;
+  }
 }
 
-header {
-  display: grid;
-  grid-template-columns: 50% 20% 30%;
-  grid-template-rows: auto auto;
-  /* border-bottom: 0.1rem solid #adb5bd; */
-  padding-top: 2.2rem;
-}
+/* laptop.css 的内容 */
+@media all and (min-device-width: 48rem) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    max-width: 48rem;
+    text-align: left;
+  }
 
-.name-wrapper {
-  display: grid;
-  grid-template-columns: auto auto;
-}
+  header {
+    display: grid;
+    grid-template-columns: 50% 20% 30%;
+    grid-template-rows: auto auto;
+    /* border-bottom: 0.1rem solid #adb5bd; */
+    padding-top: 2.2rem;
+  }
 
-.title {
-  font-size: 2rem;
-  margin-top: .8rem;
-}
+  .name-wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
 
-.sub-title {
-  font-size: 1rem;
-  margin-top: 1.8rem;
-}
+  .title {
+    font-size: 2rem;
+    margin-top: .8rem;
+  }
 
-.contact {
-  font-size: 1rem;
-  grid-row-start: 2;
-  display: inline-grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-}
+  .sub-title {
+    font-size: 1rem;
+    margin-top: 1.8rem;
+  }
 
-.contact-item {
-  margin-top: 0rem;
-}
+  .contact {
+    font-size: 1rem;
+    grid-row-start: 2;
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
 
-.portrait {
-  text-align: right;
-  grid-column-start: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
+  .contact-item {
+    margin-top: 0rem;
+  }
 
-.author-img {
-  width: 5rem;
-  height: 7rem;
-}
+  .portrait {
+    text-align: right;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
 
-section {
-  display: inline-table;
-  margin-top: .8rem;
-  width: 100%;
-  hyphens: auto;
-}
+  .author-img {
+    width: 5rem;
+    height: 7rem;
+  }
 
-.section-title {
-  font-size: 1.2rem;
-  border-bottom: 0.1rem solid #adb5bd;
-  min-width: 10rem;
-}
+  section {
+    display: inline-table;
+    margin-top: .8rem;
+    width: 100%;
+    hyphens: auto;
+  }
 
-.block {
-  margin-top: .2rem;
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: 1fr auto;
-}
+  .section-title {
+    font-size: 1.2rem;
+    border-bottom: 0.1rem solid #e4e9ee;
+    color: #1155c1;
+    min-width: 10rem;
+  }
 
-.block-title {
-  font-size: 1rem;
-}
+  .block {
+    margin-top: .2rem;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: 1fr auto;
+  }
 
-.block-subtitle {
-  font-size: .8rem;
-  text-align: end;
-}
+  .block-title {
+    font-size: 1rem;
+  }
 
-.block-content {
-  font-size: .9rem;
-  line-height: 1.5;
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
+  .block-subtitle {
+    font-size: .8rem;
+    text-align: end;
+  }
 
-footer {
-  font-size: 1rem;
-  min-height: 3rem;
-  line-height: 3rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  .block-content {
+    font-size: .9rem;
+    line-height: 1.5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  footer {
+    font-size: 1rem;
+    min-height: 3rem;
+    line-height: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 }
 
 html {
