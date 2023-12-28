@@ -1,0 +1,46 @@
+version: "2"
+
+services:
+  remark:
+    # remove the next line in case you want to use this docker-compose separately
+    # as otherwise it would complain for absence of Dockerfile
+    build: .
+    image: umputun/remark42:latest
+    container_name: "remark42"
+    hostname: "remark42"
+    restart: always
+
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "5"
+
+    # uncomment to expose directly (no proxy)
+    ports:
+     - "8080:8080"
+    #  - "443:8443"
+
+    environment:
+      - REMARK_URL=https://www.winn.cc/remark/
+      - SITE=winn_blog
+      - SECRET=721-520-1011
+      - DEBUG=true
+      - AUTH_ANON=true
+      - AUTH_GOOGLE_CID
+      - AUTH_GOOGLE_CSEC
+      - AUTH_GITHUB_CID=96a1f1d41ef0819f535c
+      - AUTH_GITHUB_CSEC=d8834de1c5e669fe35cc04589062dbce80a7cc27
+      - AUTH_MICROSOFT_CID=fb482271-1f7e-412f-aae9-40e4bf564622
+      - AUTH_MICROSOFT_CSEC=hvr8Q~-RMY19T~XITTPhk3P-h6BKp2nqJ4GtRaYc
+      - AUTH_FACEBOOK_CID
+      - AUTH_FACEBOOK_CSEC
+      - AUTH_DISQUS_CID
+      - AUTH_DISQUS_CSEC
+      - ADMIN_SHARED_ID:github_a10cff18051d80e6c097e1248fd4875647a06dc9
+      # Enable it only for the initial comment import or for manual backups.
+      # Do not leave the server running with the ADMIN_PASSWD set if you don't have an intention
+      # to keep creating backups manually!
+      # - ADMIN_PASSWD=<your secret password>
+    volumes:
+      - /home/winn/remark_var_dir:/srv/var

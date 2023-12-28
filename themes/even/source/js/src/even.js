@@ -5,7 +5,7 @@
     this.config = config;
   }
 
-  Even.prototype.setup = function() {
+  Even.prototype.setup = function () {
     var leancloud = this.config.leancloud;
 
     this.navbar();
@@ -24,10 +24,46 @@
     if (this.config.pjax) {
       this.pjax();
     }
-    if(this.config.latex) {
+    if (this.config.latex) {
       this.renderLaTeX();
     }
+
+    // 在加载评论之前检查是否存在评论根节点
+    var commentRootNode = document.getElementById('remark42'); // 替换成你的评论根节点的id
+    if (commentRootNode) {
+      this.loadComments(); // 如果存在评论根节点，则加载评论
+    }
+
+    window.addEventListener('beforeunload', function () {
+      even.destroyComments();
+    });
+
     this.backToTop();
+  };
+
+
+  // 在Even.prototype中添加销毁评论节点的方法
+  Even.prototype.destroyComments = function () {
+    var commentRootNode = document.getElementById('remark42'); // 替换成你的评论根节点的id
+    if (commentRootNode) {
+      commentRootNode.innerHTML = ''; // 清空评论节点的内容
+      // 如果有其他需要清理的操作，可以在这里添加
+    }
+  };
+
+  // 新增加载评论的函数
+  Even.prototype.loadComments = function () {
+
+    // 动态设置 remark_config 对象中的 url 属性
+    window.remark_config.url = window.location.href;
+
+    var components = ['embed'];
+    for (var i = 0; i < components.length; i++) {
+      var d = document, s = d.createElement('script');
+      s.src = remark_config.host + '/web/' + components[i] + '.js';
+      s.defer = true;
+      (d.head || d.body).appendChild(s);
+    }
   };
 
   Even.prototype.navbar = function () {
@@ -262,9 +298,9 @@
 
   Even.prototype.renderLaTeX = function () {
     var loopID = setInterval(function () {
-      if(window.MathJax) {
+      if (window.MathJax) {
         var jax = window.MathJax;
-        jax.Hub.Config({ tex2jax: { inlineMath: [['$', '$'], ['\\(', '\\)']] }});
+        jax.Hub.Config({ tex2jax: { inlineMath: [['$', '$'], ['\\(', '\\)']] } });
         jax.Hub.Queue(['Typeset', jax.Hub, $(document.body)[0]]);
         clearInterval(loopID);
       }
