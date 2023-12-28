@@ -40,7 +40,7 @@ fancybox: true
 pjax: true
 
 # LaTeX support (via MathJax)
-latex: false
+latex: true
 
 copyright:
   enable: false
@@ -128,7 +128,14 @@ resume:
       # major: 软件工程
   experience:
     - title: 软件工程师
-      duration: 2019.4-2022.5(4年)
+      duration: 2023.5 ~ 至今
+      company: 上海华人运通(高合汽车)
+      description: >
+        1. 负责公司 V2X RSU 运维管理平台的开发<br>
+        2. 参与ADAS智能驾驶地图, 定位, 感知, 融合, 预测内部可视化工具研发
+
+    - title: 软件工程师
+      duration: 2019.4 ~ 2023.5(4年)
       company: 合合信息(扫描全能王)
       description: >
         1. 负责公司 CUDA/CPU 的 OCR 服务系统集成交付。<br>
@@ -138,7 +145,7 @@ resume:
         5. 内部团队效率工具研发。
 
     - title: 软件工程师
-      duration: 2018.6-2019.3(9月)
+      duration: 2018.6 ~ 2019.3(9月)
       company: 上海金卓科技网络
       description: >
         1. 负责无线自组网终端网络协议仿真<br>
