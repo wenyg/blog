@@ -30,8 +30,8 @@ case "$1" in
 		NGINX_DEPLOY_DIR=${SCRIPT_DIR}/nginx-deploy
 		docker run --rm -d --net=host \
 			-v ${NGINX_DEPLOY_DIR}/nginx.conf:/etc/nginx/nginx.conf \
-			-v ${NGINX_DEPLOY_DIR}/html:/etc/ngxin/html \
 			-v ${NGINX_DEPLOY_DIR}/ssl:/etc/nginx/ssl \
+			-v ${NGINX_DEPLOY_DIR}/d:/d \
 			nginx
 	;;
 esac

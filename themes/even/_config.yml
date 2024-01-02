@@ -109,7 +109,7 @@ version: 2.11.0
 resume:
   name: 温阳光
   jobtitle: C/C++ 资深开发工程师
-  portrait: /img/wenyg.jpg # author's portrait
+  portrait: /d/img/resume/wenyg.jpg # author's portrait
   contact:
     - icon: fa-envelope
       text: yg_wen@126.com
