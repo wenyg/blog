@@ -1,5 +1,5 @@
 ---
-title: shell 使用技巧
+title: Shell 使用技巧
 tags: [shell]
 categories: 工具
 date: 2023-03-24 11:16:26
@@ -23,36 +23,51 @@ my_function
 echo "After function call: my_var=$my_var"
 ```
 
-### 未定义变量默认值
 
-当我们希望一个变量在未定义时使用默认值，可以使用${VAR_NAME:-default_value}的方式。如果VAR_NAME未被定义，则会使用默认值，否则使用VAR_NAME的值。下面是一个例子：
+### 获取脚本所在绝对路径
 
-```shell
-#!/bin/sh
+脚本中涉及到一些路径的时候可以用绝对路径，这样可以再任意地方执行脚本。而不用cd到固定的目录
 
-# 如果 MY_VAR 没有被定义则赋值为 default_value
-MY_VAR=${MY_VAR:-default_value}
+```Bash
+## 获取脚本自身所在目录绝对路径
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+echo "SCRIPT_DIR: $SCRIPT_DIR"
 
-echo "MY_VAR 的值是: $MY_VAR"
 ```
 
-在上面的例子中，如果我们运行该脚本时没有定义MY_VAR这个变量，那么就会输出：
+### 文件路径相关操作
 
-```shell
-MY_VAR 的值是: default_value
+```Bash
+# 获取目录名
+DIR=$(dirname /path/file.txt) # /path
+
+# 获取文件名
+FILE=$(basename /path/file.txt) # file.txt
+
+# 获取文件名，不带文件类型后缀
+FILE_NAME=${FILE.*} # file
+
 ```
 
-### 查找内容中包含某某字符串的文件
+### 获取环境变量的值
 
-```shell
-grep -r "xxx" .
+```Bash
+# 获取环境变量VAR的值，如果没有则是 default_value
+VAR="${VAR:-default_value}"
 ```
 
-上述命令将在当前目录及其所有子目录中递归查找包含 "xxx" 的所有文件。如果只希望搜索特定类型的文件，例如 .js 源文件，则可以指定该文件类型。
+### 多行字符串换行符处理
 
-```shell
-grep -r "xxx" --include \*.js .
+某些CI/CD 流程中可能会涉及到一些多行字符串，需要对换行符进行特殊处理，比如转义
+
+```Bash
+# 原始字符串
+original_string="这是一个包含
+换行符的
+字符串"
+
+# 将换行符替换成 ###
+escape_string=$(echo "$original_string" | sed ':a;N;$!ba; s/\n/###/g')
+echo $escape_string
+# 会输出 "这是一个包含###换行符的###字符串"
 ```
-
-
-
