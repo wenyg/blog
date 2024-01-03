@@ -1,8 +1,8 @@
 ---
-title: 计算机底层技术名称概览
+title: 计算机底层技术名词概览
 date: 2024-01-02 11:26:22
 #tags: []
-#categories: 
+categories: 理解计算机
 ---
 
 ## 晶体管
