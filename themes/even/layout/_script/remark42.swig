@@ -2,7 +2,7 @@
 <script>
 var remark_config = {
     host: 'https://www.winn.cc/remark',
-    site_id: 'winn_blog',
+    site_id: "winn.cc",
     locale: 'zh',
     show_rss_subscription: false,
     no_footer: true
