@@ -113,7 +113,7 @@
               {{ project.name }}
             </div>
             <div class="block-subtitle">
-              {{ project.contribution }}
+              {{ project.duration }}
             </div>
             <div class="block-content">
               {{ project.description }}

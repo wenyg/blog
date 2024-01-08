@@ -10,7 +10,7 @@ favicon: /favicon.ico
 
 # Set feed link (false | default | your feed link)
 # false: disable
-# default: use `atom.xml`, generator for `hexo-generator-feed`
+# default: use `atom.xml`，generator for `hexo-generator-feed`
 rss: false
 
 # ===========================================
@@ -112,7 +112,7 @@ resume:
   portrait: /d/img/resume/wenyg.jpg # author's portrait
   contact:
     - icon: fa-user
-      text: 28 岁
+      text: 29 岁
     - icon: fa-graduation-cap
       text: 本科
     - icon: fa-phone-square
@@ -120,7 +120,7 @@ resume:
     - icon: fa-envelope
       text: yg_wen@126.com
     - icon: fa-clock-o
-      text: 7 年开发经验
+      text: 7 年工作经验
     - icon: fa-book
       text: www.winn.cc
   education:
@@ -129,14 +129,14 @@ resume:
       location:  软件工程
       # major: 软件工程
   experience:
-    - title: 软件工程师
+    - title: C/C++ 资深开发工程师
       duration: 2023.5 ~ 至今
       company: 上海华人运通 (高合汽车)
       description: >
         1. 负责公司车路协同路侧通信设备运维管理平台 RSU 接口开发。 <br>
         2. 参与 ADAS 智能驾驶地图，定位，感知，融合，预测内部可视化工具研发。
 
-    - title: 软件工程师
+    - title: 系统平台高级工程师
       duration: 2019.4 ~ 2023.5 (4 年)
       company: 合合信息 (扫描全能王)
       description: >
@@ -146,21 +146,30 @@ resume:
         4. 负责私有云授权加密系统设计以及研发。<br>
         5. 内部团队效率工具研发。
 
-    - title: 软件工程师
+    - title: C/C++ 软件工程师
       duration: 2018.6 ~ 2019.3 (9 月)
       company: 上海金卓科技网络
       description: >
         1. 负责无线自组网终端网络协议仿真。 <br>
         2. 负责终端协议栈开发，参与网络层路由算法，链路层时隙分配实现。
-    - title: 软件工程师
+    - title: Linux C 软件工程师
       duration: 2016.6-2018.5 (2 年)
       company: 北京云起龙骧科技
       description: >
         1. 负责智能 DNS 服务器项目 <br>
         2. 负责邮件推送系统
   projects:
+    - name: 智能驾驶可视化工具
+      duration: 2023.10 ~ 至今
+      description: >
+        项目描述:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp; 与智能驾驶团队地图，定位，感知，融合，预测部门配合，实现其数据处理以及可视化展示。
+        <br> 技术职责:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;1. ROS，Protobuf，Struct 消息定义与转换。<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;2. 自动化测试程序设计与实现。
+
     - name: 车路协同路侧通信设备运维管理平台
-      contribution: C/C++ 工程师  
+      duration: 2023.6 ~ 2023.10
       description: >
         项目描述:<br>
         &nbsp;&nbsp;&nbsp;&nbsp; 按照中国通信标准化协会发布的平台要求实现 RSU 运维管理平台接口。包含设备、配置、告警、性能、OTA、数据统计等功能模块。
@@ -169,16 +178,10 @@ resume:
         <br> 技术职责:<br>
         &nbsp;&nbsp;&nbsp;&nbsp;1. 平台需求分析，方案制定以及代码设计和实现。<br>
         &nbsp;&nbsp;&nbsp;&nbsp;2. 自动化测试程序设计与实现。
-    - name: 车路协同路侧通信设备运维管理平台
-      contribution: C/C++ 工程师  
-      description: >
-        项目描述:<br>
-        &nbsp;&nbsp;&nbsp;&nbsp; 与智能驾驶团队地图，定位，感知，融合，预测部门配合，实现其数据处理以及可视化展示。
-        <br> 技术职责:<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;1. ROS, Protobuf, Struct 消息定义与转换。<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;2. 自动化测试程序设计与实现。
+
     
     - name: MOSS 构建平台
+      duration: 2020.9 ~ 2022.5
       description: >
         项目描述:<br>
         &nbsp;&nbsp;&nbsp;&nbsp; 该项目主要为了解决旧平台算法接口到商业化中间的流程过长，交付缓慢的问题。该平台通过模块与业务解耦，低代码任务编排，可以快速的构建业务镜像。支持 x86 和 ARM 架构。版本发布耗时由 1~2 天降低至 1~2 小时。目前公司内超过 80% 的开发者在使用该平台进行产品上线以及项目交付。累计 30+ 算法模块，构建 80+ 产品，发布 400+ 版本。
@@ -191,8 +194,8 @@ resume:
         &nbsp;&nbsp;&nbsp;&nbsp;4. C++ 包管理器的设计与实现以及技术迭代。<br>
         &nbsp;&nbsp;&nbsp;&nbsp;5. 参与内部发布平台 / 测试平台需求评审，以及自动化流程对接。<br>
         &nbsp;&nbsp;&nbsp;&nbsp;6. 跨部门合作，沟通交流，项目推广，以及技术培训。
-      contribution: Linux C 研发工程师
     - name: 授权加密系统
+      duration: 2019.9 ~ 2022.5
       description: >
         项目描述:<br>
         &nbsp;&nbsp;&nbsp;&nbsp; 该项目主要为了保护公司知识产权，绑定硬件信息的方式，将产品授权与机器进行绑定，防止私有化产品被盗刻复刻。有许可证中心授权服务和序列号授权两种方式。累计发放许可证 6000+ 个。
@@ -200,9 +203,8 @@ resume:
         &nbsp;&nbsp;&nbsp;&nbsp; 授权服务器采用 Libevent 处理网络请求，用 OpenSSL 做加解密以及校验，同时通过代码混淆，加壳等步骤对程序进行加固。
         <br> 技术职责:<br>
         &nbsp;&nbsp;&nbsp;&nbsp; 负责整个项目的架构设计，加解密策略，传输协议等设计与研发。
-      contribution: 项目负责人
     - name: 智能 DNS 服务器
-      contribution: Linux C 研发工程师
+      duration: 2017.7 ~ 2018.5
       description: >
         项目描述:<br>
         &nbsp;&nbsp;&nbsp;&nbsp; 智能 DNS 服务器，在传统的 DNS 基础功能上添加了智能解析，可视化管理等功能技术架构：
@@ -213,29 +215,29 @@ resume:
         &nbsp;&nbsp;&nbsp;&nbsp;3. 负责 IP 库的实现以及维护。<br>
 
   skills:
-    - title: 1. 熟练掌握 <b>C/C++</b>, 熟悉 <b> 面向过程 / 面向对象 / 泛型编程 </b> 等思想，7 年开发经验。
+    - title: 1. 熟练掌握 <b>C/C++</b>，熟悉 <b> 面向过程 / 面向对象 / 泛型编程 </b> 等思想，7 年开发经验。
       items: xxx
-    - title: 2. 熟悉 <b>Python/Shell/Lua</b> 脚本语言，了解 NodeJS, ReactJS 前端语言。
+    - title: 2. 熟悉 <b>Python/Shell/Lua</b> 脚本语言，了解 NodeJS，ReactJS 前端语言。
       items: xxx
-    - title: 3. 擅长阅读源码，为开源项目 NS3, <b>Libevent</b>, Opentelementry 贡献过少量代码。
+    - title: 3. 擅长阅读移植开源代码，为开源项目 NS3，<b>Libevent</b>，Opentelementry 贡献过少量代码。
       items: xxx
     - items: xxx
-      title: 4. 熟练 <b>Docker</b> 底层原理，熟悉 <b>Kubernetes</b>, Argo Wrokflow 基本操作。
+      title: 4. 熟练掌握 <b>Docker</b> 底层原理，熟悉 <b>Kubernetes</b> 基本操作。
     - items: xxxx
-      title: 5. 熟悉 <b>TCP/IP</b> 协议栈，熟悉 <b>HTTP, SSL, DNS</b>, MQTT 等网络协议。
+      title: 5. 熟悉 <b>TCP/IP</b> 协议栈，熟悉 <b>HTTP，SSL，DNS</b>，MQTT 等网络协议。
     - items: xxxx
-      title: 6. 熟悉 Linux 下 <b> 网络编程 </b>, <b> 多线程编程 </b>, <b> 共享内存 </b>, <b> 进程间通信 </b>。
+      title: 6. 熟悉 Linux 下 <b> 网络编程 </b>，<b> 多线程编程 </b>，<b> 进程间通信 </b>。
     - items: xxxx
       title: 7. 熟练掌握 Linux 下 <b>gcc cmake</b> 构建系统，熟悉 <b>gdb</b> 调试工具。
     - items: xxxx
-      title: 8. 了解 Linux <b> 内核进程管理，内存管理，进程调度 </b > 实现机制。
+      title: 8. 了解 Linux <b> 内核进程管理，进程调度 </b > 实现机制。
     - items: xxxx
-      title: 9. 熟悉程序的的 <b> 编译 </b>, <b> 汇编 </b>, <b> 链接 </b>, <b> 装载过程 </b>, 了解交叉编译。
+      title: 9. 熟悉程序的 <b> 编译 </b>，<b> 汇编 </b>，<b> 链接 </b>，<b> 装载过程 </b>，了解交叉编译。
     - items: xxxx
-      title: 10. 负责过多个中小型项目软件项目功能 / 模块 /<b> 架构设计 </b>, 以及相关维护，产品迭代工作。
+      title: 10. 负责过多个中小型项目软件项目功能 / 模块 /<b> 架构设计 </b>，以及相关维护，产品迭代工作。
     - items: xxxx
       title: 11. 熟悉软件单元测试，TDD <b> 测试驱动开发 </b>。
     - items: xxxx
-      title: 12. 擅长于 <b> 文档编写 </b>, 在目前公司内留下项目文档，教程，技术博客等累计字数 10W+。
+      title: 12. 擅长于 <b> 文档编写 </b>，在目前公司内留下项目文档，教程，技术博客等累计字数 10W+。
     - items: xxxx
-      title: 13. 擅长于 <b> 知识分享 </b>, 在历任公司内部进行数十次的技术专题分享。
+      title: 13. 擅长于 <b> 知识分享 </b>，在历任公司内部进行数十次的技术专题分享。
