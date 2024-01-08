@@ -74,7 +74,7 @@
           {% for skill in theme.resume.skills %}
           <div >
             <div >
-              {{ skill.title }}
+               {{ loop.index }}.{{" "}}{{ skill.skill }}
             </div>
           </div>
           {% endfor %}

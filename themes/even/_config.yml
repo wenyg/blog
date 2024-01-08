@@ -128,32 +128,47 @@ resume:
       duration: 2013/9 ~ 2017/5
       location:  软件工程
       # major: 软件工程
+  skills:
+    - skill: 熟练掌握 <b>C/C++</b>，熟悉 <b> 面向过程 / 面向对象 / 泛型编程 </b> 等思想，7 年开发经验。
+    - skill: 熟悉常见 <b> 设计原则 </b> 与 <b> 设计模式 </b>。
+    - skill: 熟悉 <b>Python/Shell/Lua</b> 脚本语言，了解 NodeJS，ReactJS 前端语言。
+    - skill: 擅长阅读移植开源代码，为开源项目 NS3，<b>Libevent</b>，Opentelementry 贡献过少量代码。
+    - skill: 熟练掌握 <b>Docker</b> 底层原理，熟悉 <b>Kubernetes</b> 基本操作。
+    - skill: 熟悉 <b>TCP/IP</b> 协议栈，熟悉 <b>HTTP</b>，<b>SSL</b>，<b>DNS</b>，MQTT 等网络协议。
+    - skill: 熟悉 Linux 下 <b> 网络编程 </b>，<b> 多线程编程 </b>，<b> 进程间通信 </b>。
+    - skill: 熟练掌握 Linux 下 <b>gcc cmake</b> 构建系统，熟悉 <b>gdb</b> 调试工具。
+    - skill: 了解 Linux <b> 内核进程管理 </b>，<b> 进程调度 </b> 实现机制。
+    - skill: 熟悉程序的 <b> 编译 </b>，<b> 汇编 </b>，<b> 链接 </b>，<b> 装载过程 </b>，了解交叉编译。
+    - skill: 负责过多个中小型项目软件项目功能 / 模块 /<b> 架构设计 </b>，以及相关维护，产品迭代工作。
+    - skill: 熟悉软件 <b> 单元测试 </b>，TDD <b> 测试驱动开发 </b>。
+    - skill: 擅长于 <b> 文档编写 </b>，在历任公司留下项目文档，教程，技术博客等累计字数 10W+。
+    - skill: 擅长于 <b> 知识分享 </b>，在历任公司内部进行数十次的技术专题分享。
   experience:
     - title: C/C++ 资深开发工程师
       duration: 2023.5 ~ 至今
       company: 上海华人运通 (高合汽车)
       description: >
         1. 负责公司车路协同路侧通信设备运维管理平台 RSU 接口开发。 <br>
-        2. 参与 ADAS 智能驾驶地图，定位，感知，融合，预测内部可视化工具研发。
+        2. 参与 ADAS 智能驾驶地图，定位，感知，融合，预测的可视化工具研发。 <br>
+        3. 规范团队工程版本发布流程以 <b> 构建工程的优化 </b>。
 
     - title: 系统平台高级工程师
       duration: 2019.4 ~ 2023.5 (4 年)
       company: 合合信息 (扫描全能王)
       description: >
-        1. 负责公司 CUDA/CPU 的 OCR 服务系统集成交付。<br>
-        2. 负责公司内部低代码构建平台，容器管理平台的设计以及研发。<br>
+        1. 负责公司 <b>CUDA/CPU</b> 的 OCR 服务系统 <b> 集成 </b> 交付。<br>
+        2. 负责公司内部 <b> 低代码构建平台 </b>，<b> 容器管理平台 </b> 的设计以及研发。<br>
         3. 参与公司内部其他平台的对接以及需求评审。<br>
-        4. 负责私有云授权加密系统设计以及研发。<br>
-        5. 内部团队效率工具研发。
+        4. 负责私有云 <b> 授权加密系统 </b> 设计以及研发。<br>
 
     - title: C/C++ 软件工程师
-      duration: 2018.6 ~ 2019.3 (9 月)
+      duration: 2018.7 ~ 2019.3 (9 月)
       company: 上海金卓科技网络
       description: >
         1. 负责无线自组网终端网络协议仿真。 <br>
         2. 负责终端协议栈开发，参与网络层路由算法，链路层时隙分配实现。
     - title: Linux C 软件工程师
-      duration: 2016.6-2018.5 (2 年)
+      duration: 2016.6-2018.6 (2 年)
       company: 北京云起龙骧科技
       description: >
         1. 负责智能 DNS 服务器项目 <br>
@@ -163,10 +178,13 @@ resume:
       duration: 2023.10 ~ 至今
       description: >
         项目描述:<br>
-        &nbsp;&nbsp;&nbsp;&nbsp; 与智能驾驶团队地图，定位，感知，融合，预测部门配合，实现其数据处理以及可视化展示。
+        &nbsp;&nbsp;&nbsp;&nbsp; 与智能驾驶团队地图，定位，感知，融合，预测 <b> 多部门配合 </b>，实现其数据处理以及可视化展示。
+        <br> 项目架构:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp; 项目基于 <b>ROS</b> 环境进行开发，通过 <b>ZMQ</b> 与底层通信，基于 <b>rivz</b> 做数据可视化
         <br> 技术职责:<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;1. ROS，Protobuf，Struct 消息定义与转换。<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;2. 自动化测试程序设计与实现。
+        &nbsp;&nbsp;&nbsp;&nbsp;1. 各团队间的 ROS，Protobuf，Struct 消息定义与转换。<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;2. 地图，定位，感知，融合的数据可视化。<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;3. 工程优化，工具 <b> 容器化 </b>，优化版本 <b> 自动化 </b>。
 
     - name: 车路协同路侧通信设备运维管理平台
       duration: 2023.6 ~ 2023.10
@@ -174,7 +192,7 @@ resume:
         项目描述:<br>
         &nbsp;&nbsp;&nbsp;&nbsp; 按照中国通信标准化协会发布的平台要求实现 RSU 运维管理平台接口。包含设备、配置、告警、性能、OTA、数据统计等功能模块。
         <br> 项目架构:<br>
-        &nbsp;&nbsp;&nbsp;&nbsp; RSU 采用 MQTT 与管理平台进行通信，用 fdbus 与 RSU 其他模块进行数据交互。采用 Protobuf 进行数据序列化。采用 Google Test 做单元测试。
+        &nbsp;&nbsp;&nbsp;&nbsp; RSU 采用 <b>MQTT</b> 与管理平台进行通信，用 <b>fdbus</b> 与 RSU 其他模块进行数据交互。采用 <b>Protobuf</b> 进行数据序列化。采用 Google Test 做单元测试。
         <br> 技术职责:<br>
         &nbsp;&nbsp;&nbsp;&nbsp;1. 平台需求分析，方案制定以及代码设计和实现。<br>
         &nbsp;&nbsp;&nbsp;&nbsp;2. 自动化测试程序设计与实现。
@@ -184,60 +202,56 @@ resume:
       duration: 2020.9 ~ 2022.5
       description: >
         项目描述:<br>
-        &nbsp;&nbsp;&nbsp;&nbsp; 该项目主要为了解决旧平台算法接口到商业化中间的流程过长，交付缓慢的问题。该平台通过模块与业务解耦，低代码任务编排，可以快速的构建业务镜像。支持 x86 和 ARM 架构。版本发布耗时由 1~2 天降低至 1~2 小时。目前公司内超过 80% 的开发者在使用该平台进行产品上线以及项目交付。累计 30+ 算法模块，构建 80+ 产品，发布 400+ 版本。
+        &nbsp;&nbsp;&nbsp;&nbsp; 该项目主要为了解决旧平台算法接口到商业化中间的流程过长，交付缓慢的问题。该平台通过将模块与业务 <b> 解耦 </b>，以及 <b> 低代码任务编排 </b>，可以快速的构建业务镜像。支持 <b>x86</b> 和 <b>ARM</b> 架构。版本发布耗时由 <b>1~2 天降低至 1~2 小时 </b>。目前公司内超过 <b>80%</b> 的开发者在使用该平台进行产品上线以及项目交付。累计 <b>30+</b> 算法模块，构建 <b>80+</b> 产品，发布 <b>400+</b> 版本。
         <br> 项目架构:<br>
-        &nbsp;&nbsp;&nbsp;&nbsp; 模块部分用 Google Test 做单元测试，gcovr 做代码覆盖率测试，Gitlab CI 做自动化集成。平台部分用 Nginx + Lua + PostgreSQL + Argo Workflow + Kaniko 处理前端业务逻辑以及镜像构建。业务镜像内部框架使用 Boost 处理 http 请求，taskflow 做模块编排，pybind11 做 python 模块接入。技术职责:
+        &nbsp;&nbsp;&nbsp;&nbsp; 模块部分用 <b>Google Test</b> 做单元测试，<b>gcovr</b> 做代码覆盖率测试，<b>Gitlab CI</b> 做自动化集成。平台部分用 <b>Nginx + Lua + PostgreSQL + Argo Workflow + Kaniko</b> 处理前端业务逻辑以及镜像构建。业务镜像内部框架使用 <b>Boost</b> 处理 http 请求，taskflow 做模块编排，<b>pybind11</b> 做 python 模块接入。技术职责:
         <br> 技术职责:<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;1. 核心模块架构设计，技术选型以及难关攻克。<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;2. 低代码模块编排的设计与实现。<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;3. 单元测试，代码覆盖率测试脚手架设计与实现。<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;4. C++ 包管理器的设计与实现以及技术迭代。<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;5. 参与内部发布平台 / 测试平台需求评审，以及自动化流程对接。<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;6. 跨部门合作，沟通交流，项目推广，以及技术培训。
+        &nbsp;&nbsp;&nbsp;&nbsp;1. 核心模块 <b> 架构设计 </b>，技术选型以及难关攻克。<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;2. <b> 低代码模块编排 </b> 的设计与实现。<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;3. 单元测试，代码覆盖率测试 <b> 脚手架设计与实现 </b>。<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;4. <b>C++ 包管理器 </b> 的设计与实现以及技术迭代。<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;5. 参与内部发布平台 / 测试平台需求评审，以及 <b> 自动化 </b> 流程对接。<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;6. <b> 跨部门合作 </b>，沟通交流，项目推广，以及技术培训。
+    - name: 扫描全能王后台服务集成
+      duration: 2019.8 ~ 2022.5
+      description: >
+        项目描述:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp; 与图像处理，检测，识别，NLP 语义分析等 <b> 多个算法团队配合 </b>，将其接口进行 <b> 集成 </b>，供公有云、私有云客户调用。
+        <br> 项目架构:<br> 
+        &nbsp;&nbsp;&nbsp;&nbsp; 用 <b>docker</b> 做服务封装，http server 接收用户请求，采用 <b> 多进程 + 协程 </b> 的方式处理用户请求。
+        <br> 技术职责:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;1. 负责主程序 http server 以及业务 <b> 框架开发 </b> 和优化。<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;2. 负责公有云、私有云定制任务开发。<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;3. 负责模块间 <b> 性能优化 </b> 及问题排查，协同上下游合作，完成项目推进。<br>
+
+
     - name: 授权加密系统
       duration: 2019.9 ~ 2022.5
       description: >
         项目描述:<br>
-        &nbsp;&nbsp;&nbsp;&nbsp; 该项目主要为了保护公司知识产权，绑定硬件信息的方式，将产品授权与机器进行绑定，防止私有化产品被盗刻复刻。有许可证中心授权服务和序列号授权两种方式。累计发放许可证 6000+ 个。
+        &nbsp;&nbsp;&nbsp;&nbsp; 该项目主要为了保护公司知识产权，<b> 绑定硬件 </b> 信息的方式，将产品授权与机器进行绑定，防止私有化产品被盗刻复刻。有许可证 <b> 中心授权 </b> 服务和 <b> 序列号授权 </b> 两种方式。累计发放许可证 6000+ 个。
         <br> 项目架构:<br>
-        &nbsp;&nbsp;&nbsp;&nbsp; 授权服务器采用 Libevent 处理网络请求，用 OpenSSL 做加解密以及校验，同时通过代码混淆，加壳等步骤对程序进行加固。
+        &nbsp;&nbsp;&nbsp;&nbsp; 授权服务器采用 Libevent 处理网络请求，用 <b>OpenSSL</b> 做加解密以及校验，同时通过 <b> 代码混淆 </b>，<b> 加壳 </b> 等步骤对程序进行加固。
         <br> 技术职责:<br>
-        &nbsp;&nbsp;&nbsp;&nbsp; 负责整个项目的架构设计，加解密策略，传输协议等设计与研发。
+        &nbsp;&nbsp;&nbsp;&nbsp; 负责整个项目的 <b> 架构设计 </b>，<b> 加解密策略 </b>，传输协议等设计与研发。
+
+    - name: 无线自组网协议栈开发
+      duration: 2018.7 ~ 2019.3
+      description: >
+        项目描述:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp; 无线自组网络是由一组自主终端相互合作而形成的自创造、自组织和自管理网络。
+        <br> 技术职责:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp; 负责无线自组网 TDMA 时隙分配方案设计和实现。
+
     - name: 智能 DNS 服务器
-      duration: 2017.7 ~ 2018.5
+      duration: 2017.7 ~ 2018.6
       description: >
         项目描述:<br>
         &nbsp;&nbsp;&nbsp;&nbsp; 智能 DNS 服务器，在传统的 DNS 基础功能上添加了智能解析，可视化管理等功能技术架构：
-        由 Apache + CGI 处理前端请求，通过 UNIX 域套接字与 DNS 服务通讯进行域名配置。其中 DNS 服务器采用 epoll 多路复用处理 DNS 请求，用哈希表实现域名快速查找，用 radix tree 实现 IP 库的建立查找与匹配。
+        由 Apache + CGI 处理前端请求，通过 UNIX 域套接字与 DNS 服务通讯进行域名配置。其中 DNS 服务器采用 <b>epoll</b> 多路复用处理 DNS 请求，用 <b> 哈希表 </b> 实现域名快速查找，用 radix tree 实现 IP 库的建立查找与匹配。
         <br> 技术职责：<br>
         &nbsp;&nbsp;&nbsp;&nbsp;1. 负责 DNS 服务主程代码。<br>
         &nbsp;&nbsp;&nbsp;&nbsp;2. DNS 协议编解码的实现。<br>
         &nbsp;&nbsp;&nbsp;&nbsp;3. 负责 IP 库的实现以及维护。<br>
 
-  skills:
-    - title: 1. 熟练掌握 <b>C/C++</b>，熟悉 <b> 面向过程 / 面向对象 / 泛型编程 </b> 等思想，7 年开发经验。
-      items: xxx
-    - title: 2. 熟悉 <b>Python/Shell/Lua</b> 脚本语言，了解 NodeJS，ReactJS 前端语言。
-      items: xxx
-    - title: 3. 擅长阅读移植开源代码，为开源项目 NS3，<b>Libevent</b>，Opentelementry 贡献过少量代码。
-      items: xxx
-    - items: xxx
-      title: 4. 熟练掌握 <b>Docker</b> 底层原理，熟悉 <b>Kubernetes</b> 基本操作。
-    - items: xxxx
-      title: 5. 熟悉 <b>TCP/IP</b> 协议栈，熟悉 <b>HTTP，SSL，DNS</b>，MQTT 等网络协议。
-    - items: xxxx
-      title: 6. 熟悉 Linux 下 <b> 网络编程 </b>，<b> 多线程编程 </b>，<b> 进程间通信 </b>。
-    - items: xxxx
-      title: 7. 熟练掌握 Linux 下 <b>gcc cmake</b> 构建系统，熟悉 <b>gdb</b> 调试工具。
-    - items: xxxx
-      title: 8. 了解 Linux <b> 内核进程管理，进程调度 </b > 实现机制。
-    - items: xxxx
-      title: 9. 熟悉程序的 <b> 编译 </b>，<b> 汇编 </b>，<b> 链接 </b>，<b> 装载过程 </b>，了解交叉编译。
-    - items: xxxx
-      title: 10. 负责过多个中小型项目软件项目功能 / 模块 /<b> 架构设计 </b>，以及相关维护，产品迭代工作。
-    - items: xxxx
-      title: 11. 熟悉软件单元测试，TDD <b> 测试驱动开发 </b>。
-    - items: xxxx
-      title: 12. 擅长于 <b> 文档编写 </b>，在目前公司内留下项目文档，教程，技术博客等累计字数 10W+。
-    - items: xxxx
-      title: 13. 擅长于 <b> 知识分享 </b>，在历任公司内部进行数十次的技术专题分享。
+
