@@ -26,7 +26,7 @@ echo "After function call: my_var=$my_var"
 
 ### 获取脚本所在绝对路径
 
-脚本中涉及到一些路径的时候可以用绝对路径，这样可以再任意地方执行脚本。而不用cd到固定的目录
+脚本中涉及到一些路径的时候可以用绝对路径，这样可以再任意地方执行脚本。而不用 cd 到固定的目录
 
 ```Bash
 ## 获取脚本自身所在目录绝对路径
@@ -52,22 +52,29 @@ FILE_NAME=${FILE.*} # file
 ### 获取环境变量的值
 
 ```Bash
-# 获取环境变量VAR的值，如果没有则是 default_value
+# 获取环境变量 VAR 的值，如果没有则是 default_value
 VAR="${VAR:-default_value}"
 ```
 
 ### 多行字符串换行符处理
 
-某些CI/CD 流程中可能会涉及到一些多行字符串，需要对换行符进行特殊处理，比如转义
+某些 CI/CD 流程中可能会涉及到一些多行字符串，需要对换行符进行特殊处理，比如转义
 
 ```Bash
 # 原始字符串
-original_string="这是一个包含
+original_string=" 这是一个包含
 换行符的
-字符串"
+字符串 "
 
 # 将换行符替换成 ###
 escape_string=$(echo "$original_string" | sed ':a;N;$!ba; s/\n/###/g')
 echo $escape_string
-# 会输出 "这是一个包含###换行符的###字符串"
+# 会输出 "这是一个包含 ### 换行符的 ### 字符串"
 ```
+
+### 后台执行程序
+
+```shell
+$(COMMOND &)
+```
+同 `nohup COMMOND &`
