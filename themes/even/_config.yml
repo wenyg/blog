@@ -111,16 +111,18 @@ resume:
   jobtitle: C/C++ 资深开发工程师
   portrait: /d/img/resume/wenyg.jpg # author's portrait
   contact:
-    - icon: fa-envelope
-      text: yg_wen@126.com
+    - icon: fa-user
+      text: 28 岁
+    - icon: fa-graduation-cap
+      text: 本科
     - icon: fa-phone-square
       text: "17521662505"
-    - icon: fa-home
-      text: "www.winn.cc"
-      link: "https://www.winn.cc"
-    - icon: fa-github
-      text: github/wenyg
-      link: "https://github.com/wenyg"
+    - icon: fa-envelope
+      text: yg_wen@126.com
+    - icon: fa-clock-o
+      text: 7 年开发经验
+    - icon: fa-book
+      text: www.winn.cc
   education:
     - university: 中原工学院
       duration: 2013/9 ~ 2017/5

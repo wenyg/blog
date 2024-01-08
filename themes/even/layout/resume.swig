@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title> 温阳光 - C/C++开发工程师 </title>
+    <title> 温阳光 - C/C++ 开发工程师 </title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="/css/NotoSans.css" rel="stylesheet">
@@ -42,7 +42,7 @@
 
       <section id="education">
         <div class="section-title">
-          {{ __('教育背景') }} 
+          {{__(' 教育背景 ') }} 
         </div>
         <div class="section-content">
           {% for edu in theme.resume.education %}
@@ -68,7 +68,7 @@
       </section>
       <section id="skills">
         <div class="section-title">
-        {{ __('专业技能') }} 
+        {{__(' 专业技能 ') }} 
         </div>
         <div class="section-content">
           {% for skill in theme.resume.skills %}
@@ -83,7 +83,7 @@
 
       <section id="experience">
         <div class="section-title">
-          {{ __('工作经历') }} 
+          {{__(' 工作经历 ') }} 
         </div>
         <div class="section-content">
           {% for exp in theme.resume.experience %}
@@ -104,7 +104,7 @@
 
       <section id="projects">
         <div class="section-title">
-          {{ __('项目经验') }} 
+          {{__(' 项目经验 ') }} 
         </div>
         <div class="section-content">
           {% for project in theme.resume.projects %}
