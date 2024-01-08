@@ -2,25 +2,5 @@
 {%- include "./_footer/social.swig" -%}
 
 <div class="copyright">
-
-  <span class="copyright-year">
-    {%- set current = date(Date.now(), "YYYY") -%}
-    &copy;
-    {%- if theme.since and theme.since != current -%}
-      {{ theme.since }} - {{ current }}
-    {%- else -%}
-      {{ current }}
-    {%- endif -%} 
-
-    <span class="heart">
-      <i class="iconfont icon-heart"></i>
-    </span>
-    <span class="author">
-      <a target="_blank" href="https://beian.miit.gov.cn">豫ICP备17036444号-1</a>
-    </span>
-    <span class="heart">
-      <i class="iconfont icon-heart"></i>
-    </span>
-    <span class="author">{{ config.author }}</span>
-  </span>
+  {{"@2017-2024 豫ICP备17036444号-1 阳光的网络日志"}}
 </div>

@@ -139,7 +139,7 @@
   }
 
   section {
-    display: inline-table;
+    /* display: inline-table; */
     margin-top: .8rem;
     width: 100%;
     hyphens: auto;
