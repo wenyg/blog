@@ -125,7 +125,18 @@
   .contact-item {
     margin-top: 0rem;
   }
+  
+  .fixed-width-icon {
+    width: 18px; /* 你想要的固定宽度 */
+    display: inline-block; /* 使宽度生效，并保持元素在同一行 */
+    text-align: center; /* 可选，使图标在宽度内居中 */
+  }
 
+  .item-text {
+    line-height: 1.2; /* 设置合适的行高，确保中文和英文的高度相同 */
+    margin-left: 10px; /* 适当的间距，根据实际情况调整 */
+  }
+  
   .portrait {
     text-align: right;
     grid-column-start: 3;

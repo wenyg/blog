@@ -26,7 +26,7 @@
             {% if item.link %}
             <a href="{{ item.link }}">
             {% endif %}
-            <i class="fa {{ item.icon }} aria-hidden="true></i> {{ item.text }}
+            <i class="fa {{ item.icon }} fixed-width-icon aria-hidden="true></i> {{ item.text }}
             {% if item.link %}
             </a>
             {% endif %}
