@@ -51,34 +51,25 @@ void invoke(){
 
 ## C++ 角度
 
-不过要是从 C++ 的角度，解释 lambda 到底是什么，上面的 lambda 函数调用代码与下面的代码等价，[查看汇编差异](https://gcc.godbolt.org/z/vhqPEYcMG)
+从 C++ 的角度，解释 lambda 到底是什么，先看下面的示例，下面的代码与上面的 lambda 函数调用代码在汇编代码中等价，[点击查看汇编代码](https://gcc.godbolt.org/z/jqbc9Pjz6)
 
 ```cpp
 void invoke()
 {
-  class __lambda_2_16 {
+  class __invoke_add{
     public: 
-      inline int operator()(int x, int y) const {
-        return x + y;
-      }
-      
-      using retType_2_16 = int (*)(int, int);
-      inline operator retType_2_16 () const noexcept {
-        return __invoke;
-      };
-    
-    private: 
-      static inline int __invoke(int x, int y) {
-        return __lambda_2_16{}.operator()(x, y);
-      }    
+    inline int operator()(int x, int y) const {
+      return x + y;
+    }
   };
   
-  __lambda_2_16 add = __lambda_2_16(__lambda_2_16{});
+  __invoke_add add;
   add.operator()(11, 17);
 }
 ```
+> 注意仅仅是在该示例中等价，实际上lambda函数在编译时还会有一个类型转换操作符，用于将lambda对象转换为一个函数指针，本例中没有涉及，故省略。
 
-简单一句话就是编译器会将 lambda 函数编译成一个匿名类， 重载它的 `operator ()` 方法，该方法返回了一个函数指针。
+简单一句话就是编译器会将 lambda 函数编译成一个匿名类， 重载它的 `operator ()` 方法。
 
 回头来解释上面汇编的几处差异，
 
@@ -107,3 +98,11 @@ invoke():
         leave
         ret
 ```
+
+**lambda参数捕获**
+
+拿捕获的变量为 `int base=5;` 举例。
+
+`=` 捕获相当于匿名类内部有个 `int base;`  私有变量。构造函数是 `__invoke_add(int &_base): base(_base) {};`
+
+`&` 捕获相当于匿名类内部有个 `int &base;` 私有变量。构造函数同上。
