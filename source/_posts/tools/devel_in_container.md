@@ -31,10 +31,29 @@ docker run -ti --entrypoint=/bin/bash \
 
 - `-v $(pwd)/.vscode-server:/root/.vscode-server` vscode 容器开发会在容器内的 $HOME/.vscode-server 里安装一些资源或者文件，包括容器内的插件也在这里，提前挂载进去是将这部分持久化，避免重新安装
 
-<!-- more -->
+## Remote-SSH 配置
 
-## vscode 配置
+另一种方法，是在容器里启一个ssh服务，然后用ssh远程连接，和连接远程服务器一样，下面是 容器内远程连接的一些说明以及配置
 
-vscode 需要安装 Dev Containers 插件， 然后在左侧边栏的远程资源管理器，选择开发容器就可以看到启动的容器
+1. 容器要 --net=host 启动，且要将代码挂载进容器内
+2. 要选择一个容器 ssh 端口，比如 2222，连接容器内的时候要指定端口。（22通常是宿主机的 ssh 端口）
 
-![Attach to Container](https://code.visualstudio.com/assets/docs/devcontainers/attach-container/containers-attach.png)
+在容器安装ssh服务并开启，下面是 `ssh-rsa xxxxxxxxxxxxxxxxxxxxx` 是物理机的公钥, 用于免密登录，需要替换成自己的值。
+
+> 公钥通常在 `$HOME/.ssh/id_rsa.pub` 下，可通过 `ssh-keygen` 生成。 
+
+```bash
+apt install openssh-server -y
+mkdir /var/run/sshd
+echo "ssh-rsa xxxxxxxxxxxxxxxxxxxxx" > /root/.ssh/authorized_keys
+
+/usr/sbin/sshd -p 2222
+```
+
+物理机验证
+
+```bash
+ssh -p 2222 root@my_ip
+```
+
+验证成功后就可以使用vscode远程连接了。
