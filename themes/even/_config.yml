@@ -162,7 +162,7 @@ resume:
         4. 负责私有云 <b> 授权加密系统 </b> 设计以及研发。<br>
 
     - title: C/C++ 软件工程师
-      duration: 2018.7 ~ 2019.3 (9 月)
+      duration: 2018.7 ~ 2019.4 (9 月)
       company: 上海金卓科技网络
       description: >
         1. 负责无线自组网终端网络协议仿真。 <br>
@@ -204,7 +204,7 @@ resume:
         项目描述:<br>
         &nbsp;&nbsp;&nbsp;&nbsp; 该项目主要为了解决旧平台算法接口到商业化中间的流程过长，交付缓慢的问题。该平台通过将模块与业务 <b> 解耦 </b>，以及 <b> 低代码任务编排 </b>，可以快速的构建业务镜像。支持 <b>x86</b> 和 <b>ARM</b> 架构。版本发布耗时由 <b>1~2 天降低至 1~2 小时 </b>。公司内超过 <b>80%</b> 的开发者在使用该平台进行产品上线以及项目交付。累计 <b>30+</b> 算法模块，构建 <b>80+</b> 产品，发布 <b>400+</b> 版本。
         <br> 项目架构:<br>
-        &nbsp;&nbsp;&nbsp;&nbsp; 模块部分用 <b>Google Test</b> 做单元测试，<b>gcovr</b> 做代码覆盖率测试，<b>Gitlab CI</b> 做自动化集成。平台部分用 <b>Nginx + Lua + PostgreSQL + Argo Workflow + Kaniko</b> 处理前端业务逻辑以及镜像构建。业务镜像内部框架使用 <b>Boost</b> 处理 http 请求，taskflow 做模块编排，<b>pybind11</b> 做 python 模块接入。技术职责:
+        &nbsp;&nbsp;&nbsp;&nbsp; 模块部分用 <b>Google Test</b> 做单元测试，<b>gcovr</b> 做代码覆盖率测试，<b>Gitlab CI</b> 做自动化集成。平台部分用 <b>Nginx + Lua + PostgreSQL + Argo Workflow + Kaniko</b> 处理前端业务逻辑以及镜像构建。业务镜像内部框架使用 <b>Boost</b> 处理 http 请求，taskflow 做模块编排，<b>pybind11</b> 做 python 模块接入。
         <br> 技术职责:<br>
         &nbsp;&nbsp;&nbsp;&nbsp;1. 核心模块 <b> 架构设计 </b>，技术选型以及难关攻克。<br>
         &nbsp;&nbsp;&nbsp;&nbsp;2. <b> 低代码模块编排 </b> 的设计与实现。<br>
@@ -247,7 +247,8 @@ resume:
       duration: 2017.7 ~ 2018.6
       description: >
         项目描述:<br>
-        &nbsp;&nbsp;&nbsp;&nbsp; 智能 DNS 服务器，在传统的 DNS 基础功能上添加了智能解析，可视化管理等功能技术架构：
+        &nbsp;&nbsp;&nbsp;&nbsp; 智能 DNS 服务器，在传统的 DNS 基础功能上添加了智能解析，可视化管理等功能
+        <br>技术架构: <br>
         由 Apache + CGI 处理前端请求，通过 UNIX 域套接字与 DNS 服务通讯进行域名配置。其中 DNS 服务器采用 <b>epoll</b> 多路复用处理 DNS 请求，用 <b> 哈希表 </b> 实现域名快速查找，用 radix tree 实现 IP 库的建立查找与匹配。
         <br> 技术职责：<br>
         &nbsp;&nbsp;&nbsp;&nbsp;1. 负责 DNS 服务主程代码。<br>
