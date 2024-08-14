@@ -1,9 +1,10 @@
 ---
-title: "跟 taskflow 学习 C++ (1): 单例模式"
+title: "C++ 单例"
 date: 2024-01-31 10:27:28
 tags: [C++]
 categories: "C++11/14/17"
 ---
+
 
 
 ```cpp
