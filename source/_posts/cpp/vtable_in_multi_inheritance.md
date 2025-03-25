@@ -51,7 +51,7 @@ A,B,C 的内存布局与虚函数表如下
 
 > 可以通过 `g++ -fdump-lang-class -c base.cpp`  来看到C++ 类的虚函数表和内存布局
 
-![多继承下的虚函数表与内存布局](/d/img/cpp/vtable1.jpg)
+<!-- ![多继承下的虚函数表与内存布局](/d/img/cpp/vtable1.jpg) -->
 
 我们先以class A 为例， 讲解下虚函数表的内容。
 
@@ -162,7 +162,7 @@ int main(int argc, char **argv){
 
 下面是一个虚继承下的内存布局与虚函数表示例
 
-![虚继承下的虚函数表与内存布局](/d/img/cpp/vtable2.jpg)
+<!-- ![虚继承下的虚函数表与内存布局](/d/img/cpp/vtable2.jpg) -->
 
 > 注意到 VTT 中有几处空白没有列出来，那几个是构造函数虚表，有兴趣可自行了解。
 
