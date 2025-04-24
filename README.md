@@ -18,17 +18,18 @@ sudo docker build -t hexo .
 
 ## 使用说明
 
-1. 生成 html 
-
 ```
-./blog.sh gen
+hexo)
+	BLOG_DIR="/home/wenyg/workspace/blog"
+	CONTAINER_BLOG_DIR="/blog"
+	docker run $DOCKER_RUN_FLAGS --name hexo \
+		-v ${BLOG_DIR}/source:${CONTAINER_BLOG_DIR}/source \
+		-v ${BLOG_DIR}/themes/even:${CONTAINER_BLOG_DIR}/themes/even \
+		-v ${BLOG_DIR}/_config.yml:${CONTAINER_BLOG_DIR}/_config.yml \
+		-p 4000:4000 \
+		wenyg/blog /bin/bash -lic "hexo serve"
+	;;
 ```
-
-2. 部署 nginx
-
-```
-./blog.sh run
-``` 
 
 ## 目录说明
 
