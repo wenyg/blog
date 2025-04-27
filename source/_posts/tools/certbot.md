@@ -7,7 +7,6 @@ categories: 工具
 
 Let's Encrypt 提供免费的 SSL/TLS 证书，Certbot 是官方推荐的自动化客户端，用于申请和续期证书。
 
-事先准备
 1. 服务器安装 certbot
 2. 域名解析，将域名解析到服务器上
 3. certbot 申请证书  （需要先停止该服务器上的 80 端口的服务）
@@ -25,4 +24,4 @@ Let's Encrypt 提供免费的 SSL/TLS 证书，Certbot 是官方推荐的自动�
     ```
 4. 第三步中的路径是个符号链接，用 realpath 获取真实文件路径
 5. 部署
-
+6. 到期时候执行 `sudo certbot renew` 即可更新证书。（需要先停止 80 端口服务）
